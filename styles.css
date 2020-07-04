@@ -1,0 +1,153 @@
+body {
+  /* outline-color: black;
+  outline-style:auto;
+  background-color: rgb(118, 235, 118); */
+  margin:0;
+  font-size:2rem;
+  display:flex;
+  flex-direction:column;
+  background-image: url("TOY.jpeg");
+  background-size:100% 100% ;
+}
+.open ,
+.close {
+display:none;
+
+}
+
+input[type="checkbox"] {
+position: absolute;
+left: -50vw;
+}
+main {
+  /* outline-color: black;
+  outline-style:auto; */
+  /* flex:auto; */
+  min-height:100vh;
+  width:100%;
+  margin:0 auto;
+  display: flex;
+  padding:50px;
+  flex-direction:column;
+  /* font-size:10px; */
+}
+main h1 {
+  margin-left: auto;
+  margin-right: auto;
+  font-size:50px;
+  color:rgb(247, 239, 239,0.9);
+  background: rgba(37,35,35,0.5);
+padding:15px;
+  border-radius:50%;
+}
+main p {
+  margin-top:30%;
+  margin-bottom:70%;
+  margin-right:30%;
+  margin-left:70%;
+  padding:0;
+  writing-mode:vertical-lr;
+  color:rgb(247, 239, 239,0.9);
+  font-size:50px;
+  /* font-size:10px; */
+ 
+}
+.open,
+.close {
+  display:block;
+}
+.open {position: absolute;
+height:36px;
+width:36px;
+display:inline-block;
+box-sizing:border-box;
+border:2px solid #444;
+border-radius: 4px;
+background:white;
+}
+.open div{
+  position: absolute;
+  left:0px;
+  height:4px;
+  width:24px;
+  background-color: #444;
+  border-radius:2px;
+  display:inline-block;
+  box-sizing:border-box;
+ margin-left: 3.3px;
+}
+.open div:nth-of-type(1){
+  top:4px;
+}
+.open div:nth-of-type(2){
+  top:14px;
+}
+.open div:nth-of-type(3){
+  bottom:4px;
+}
+aside {
+  /* outline-color: black;
+  outline-style:auto; */
+  margin:0;
+  width:25%;
+  min-width: 250px;
+  display:flex;
+  flex-direction: column;
+  position: absolute;
+  left:-600px;
+  height:100%;
+  transition: all 0.2s;
+  background: #ffffff;
+
+}
+/* aside nav {
+  margin:0;
+  padding:0;
+  min-width:100px;} */
+input[type="checkbox"]:checked ~ aside {
+  left:0;
+}
+input[type="checkbox"]:checked ~ .back{
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.8);
+}
+ ul {
+  margin:0;
+  list-style:none;
+  padding:0;
+}
+
+nav ul li {
+  /* outline-color: black;
+  outline-style:auto; */
+  margin:0;
+  padding:0;
+}
+
+aside div {
+  /* outline-color: black;
+  outline-style:auto; */
+  height:300px;
+ margin-top:auto;
+}
+
+ul {
+  /* outline-color: black;
+  outline-style:auto; */
+  list-style:none;
+  padding:0;
+}
+aside div {font-size:20px;}
+footer p {
+  margin-left:auto;
+  margin-right:auto;
+  flex-direction:column;
+  color:white;
+text-align:center;
+margin-top:30px;
+margin-left:auto;
+padding-right:auto;
+background: rgba(37,35,35,0.5);
+}
